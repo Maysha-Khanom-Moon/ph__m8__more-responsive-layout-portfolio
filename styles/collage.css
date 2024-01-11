@@ -13,12 +13,25 @@ img {
     margin: 4px;
 }
 
-.row2 > img, .row3 > img{
+.row2 > img, .row3 > img, .center{
     width: calc(33.333% - 8px);
+    margin: 4px;
 }
 
 .vertical > img {
     height: calc(50% - 8px);
     width: calc(100% - 8px);
     margin-bottom: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.center > img {
+    width: calc(50% - 4px);
+    height: calc(50% - 8px);
+    margin: 0;
 }
